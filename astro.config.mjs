@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://github.kadykov.com/',
+    site: 'https://kadykov.github.io/',
     base: 'astro-image-size',
   })
