@@ -1,0 +1,27 @@
+{
+  "name": "Astro",
+  "image": "node:20-alpine",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "vscode"
+    },
+    "ghcr.io/kadykov/devcontainer-features/pre-commit:1": {}
+  },
+  "postCreateCommand": "pre-commit install && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "bradlc.vscode-tailwindcss",
+        "SheltonLouis.astro-snippets",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "unifiedjs.vscode-mdx",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
